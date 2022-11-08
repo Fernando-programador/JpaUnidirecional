@@ -1,0 +1,20 @@
+$ git init
+iniciar o git
+
+$ git status
+verificar
+
+$ git remote add origin https://github.com/Fernando-programador/JpaUnidirecional.git
+adicionar
+
+$ git checkout -b main
+trocar o breach de master para main
+
+$ git pull origin main
+para atualizar o repository trazendo o que esta nas nuvens para pc
+
+$ git commit -m "Inicio projeto"
+criando um commit
+
+$ git push -u origin main
+enviando para as nuvens
