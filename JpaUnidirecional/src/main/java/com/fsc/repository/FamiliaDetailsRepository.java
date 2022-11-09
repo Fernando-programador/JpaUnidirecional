@@ -8,12 +8,12 @@ import org.springframework.stereotype.Repository;
 import com.fsc.model.FamiliaDetails;
 
 @Repository
-public interface FamiliaDetailsRepository extends JpaRepository<FamiliaDetails, Long>{
+public interface FamiliaDetailsRepository extends JpaRepository<FamiliaDetails, Long> {
 
 	@Transactional
 	void deleteById(Long id);
-	
+
 	@Transactional
 	void deleteByFamiliaId(Long familia_id);
-	
+
 }

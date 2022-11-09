@@ -24,11 +24,11 @@ public class Familia {
 	private String cpf;
 
 	public Familia() {
-		
+
 	}
 
 	public Familia(Long id, String nome, Integer idade, String cpf) {
-		
+
 		this.id = id;
 		this.nome = nome;
 		this.idade = idade;
@@ -36,7 +36,7 @@ public class Familia {
 	}
 
 	public Familia(String nome, Integer idade, String cpf) {
-		
+
 		this.nome = nome;
 		this.idade = idade;
 		this.cpf = cpf;
@@ -73,10 +73,10 @@ public class Familia {
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
-	
+
 	@Override
-public String toString() {
-	return "Família [Meu nome é " + nome + " eu tenho " + " anos e meu CPF é: " + cpf + " ]";
-}
-	
+	public String toString() {
+		return "Família [Meu nome é " + nome + " eu tenho " + " anos e meu CPF é: " + cpf + " ]";
+	}
+
 }

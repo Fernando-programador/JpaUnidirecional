@@ -12,23 +12,23 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "pertences")
 public class FamiliaDetails {
-	
+
 	@Id
 	private Long id;
-	
+
 	@Column(name = "carro")
 	private String carro;
-	
+
 	@Column(name = "profissao")
 	private String profissao;
-	
+
 	@OneToOne(fetch = FetchType.LAZY)
 	@MapsId
-	@JoinColumn(name= "familia_Id")
+	@JoinColumn(name = "familia_Id")
 	private Familia familia;
 
 	public FamiliaDetails() {
-	
+
 	}
 
 	public FamiliaDetails(String carro, String profissao) {
@@ -60,7 +60,5 @@ public class FamiliaDetails {
 	public void setFamilia(Familia familia) {
 		this.familia = familia;
 	}
-	
-	
 
 }
